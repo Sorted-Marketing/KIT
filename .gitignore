@@ -1,0 +1,22 @@
+# Never commit secrets, backups or system junk (these repos are public)
+.DS_Store
+Thumbs.db
+.env
+.env.*
+*.htpasswd
+.htpasswd
+*.pem
+*.key
+id_*
+*.zip
+*.tar
+*.tar.gz
+*.gz
+*.sql
+*.bak
+*.old
+*.orig
+*.swp
+*~
+*.log
+__pycache__/

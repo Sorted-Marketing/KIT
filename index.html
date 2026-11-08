@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KIT · your personal keep in touch kit</title>
+  <meta name="description" content="Tell KIT who you spoke to and what happens next. It updates their record, books the follow-up and emails you when it's time to reach out. £9 a month.">
+  <meta property="og:title" content="KIT · your personal keep in touch kit">
+  <meta property="og:description" content="Know who to get back to, and when. Follow-ups, contact history and a built-in assistant, without the CRM admin.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hi-kit.co.uk/">
+  <meta property="og:image" content="https://hi-kit.co.uk/Dashboard.png">
+  <meta name="theme-color" content="#F9DD2F">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geom:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=3">
+  <script src="header.js?v=3" defer></script>
+  <script src="footer.js?v=3" defer></script>
+  <script src="form.js?v=4" defer></script>
+  <script src="demo.js?v=3" defer></script>
+</head>
+<body>
+
+<div class="band-y">
+  <site-header></site-header>
+
+  <section class="container hero" id="top">
+    <div class="hero-copy">
+      <p class="eyebrow">Your personal keep in touch kit</p>
+      <h1>Know who to get back to, and when.</h1>
+      <p class="lede">Tell KIT who you spoke to and what happens next. It updates their record, books the follow-up and emails you when it's time to reach out. No spreadsheets. No CRM admin.</p>
+      <form class="signup js-signup" novalidate>
+        <label class="visually-hidden" for="email-hero">Email address</label>
+        <input class="field" id="email-hero" name="email" type="email" placeholder="Your email address" autocomplete="email" required>
+        <button class="btn btn-dark" type="submit">Get early access</button>
+        <p class="form-message" aria-live="polite"></p>
+      </form>
+      <p class="small">£9 a month or £99 a year when paid access opens. UK only for now.</p>
+    </div>
+
+    <div class="stage" id="demo" tabindex="0" role="button" aria-label="Play the demo: tell KIT about a coffee and watch it set the follow-up">
+      <div class="app">
+        <div class="toast" id="demo-toast" role="status" hidden>
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#F9DD2F"/><path d="M7 12.5l3.2 3L17 9" fill="none" stroke="#1C2630" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span id="demo-toast-text"></span>
+        </div>
+
+        <aside class="app-side" aria-hidden="true">
+          <div>
+            <div class="app-user"><span class="app-back"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></span><span class="app-avatar">G</span>Hello</div>
+            <div class="side-list">
+              <div class="side-item on"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>Dashboard</div>
+              <div class="side-item"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.94 15.5a2 2 0 0 0-1.44-1.44l-6.13-1.58a.5.5 0 0 1 0-.96L8.5 9.94A2 2 0 0 0 9.94 8.5l1.58-6.13a.5.5 0 0 1 .96 0l1.58 6.13a2 2 0 0 0 1.44 1.44l6.13 1.58a.5.5 0 0 1 0 .96l-6.13 1.58a2 2 0 0 0-1.44 1.44l-1.58 6.13a.5.5 0 0 1-.96 0z"/></svg>Assistant</div>
+              <div class="side-item"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Contacts</div>
+              <div class="side-item"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>Settings</div>
+            </div>
+          </div>
+          <div class="side-list">
+            <div class="side-item plain"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg><u>Create contact</u></div>
+            <div class="side-item light"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 8h8M8 12h5"/></svg>Release notes</div>
+            <div class="side-item light"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>About Kit</div>
+            <div class="side-item light"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg>Sign out</div>
+          </div>
+        </aside>
+
+        <div class="app-dash" aria-hidden="true">
+          <div class="card welcome">
+            <h3>Welcome back.</h3>
+            <div class="tiles">
+              <div class="tile"><b>104</b><span>Contacts</span></div>
+              <div class="tile"><b>23</b><span>Scheduled follow-ups</span></div>
+              <div class="tile"><b id="demo-done">41</b><span>Completed follow-ups</span></div>
+            </div>
+          </div>
+          <div class="card">
+            <h4>Next follow-ups</h4>
+            <div class="fus" id="demo-fus"></div>
+          </div>
+          <div class="card">
+            <h4>Latest new contacts</h4>
+            <div class="fus">
+              <div class="fu"><b>Danile Astley</b><span>Financial adviser</span><span>17 Oct</span></div>
+              <div class="fu"><b>Priya Shah</b><span>Prospect</span><span>16 Oct</span></div>
+              <div class="fu"><b>Mike Holroyd</b><span>Gardener</span><span>14 Oct</span></div>
+              <div class="fu"><b>Gordon McLeod</b><span>Introducer</span><span>12 Oct</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ask">
+          <div class="ask-head">
+            <div class="ask-badge"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1C2630" stroke-width="2" stroke-linejoin="round"><path d="M9.94 15.5a2 2 0 0 0-1.44-1.44l-6.13-1.58a.5.5 0 0 1 0-.96L8.5 9.94A2 2 0 0 0 9.94 8.5l1.58-6.13a.5.5 0 0 1 .96 0l1.58 6.13a2 2 0 0 0 1.44 1.44l6.13 1.58a.5.5 0 0 1 0 .96l-6.13 1.58a2 2 0 0 0-1.44 1.44l-1.58 6.13a.5.5 0 0 1-.96 0z"/></svg></div>
+            <div><b>KIT assistant</b><small>Type what happened</small></div>
+          </div>
+          <div class="msgs" id="demo-msgs" aria-live="polite">
+            <div class="bub bub-kit">Hi Gareth. Who have you been in touch with?</div>
+          </div>
+          <div class="compose" aria-hidden="true">
+            <div class="cfield" id="demo-field"><span class="ph">Message KIT</span></div>
+            <div class="send"><svg width="15" height="15" viewBox="0 0 24 24"><path d="M3 20.5l18-8.5L3 3.5l2.5 7L15 12l-9.5 1.5z" fill="#1C2630"/></svg></div>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-dark play" type="button" id="demo-play">
+        <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4l13 8-13 8z" fill="#F9DD2F"/></svg>
+        See KIT in action
+      </button>
+      <button class="btn btn-light play" type="button" id="demo-replay" hidden>Play again</button>
+    </div>
+  </section>
+</div>
+
+<section class="band-g" id="how">
+  <div class="container section">
+    <h2>Keeping in touch, without the admin</h2>
+    <p class="intro">Most contact tools want you to fill in fields. KIT lets you say what happened in a sentence, then keeps track of who's next.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>Bring your people in</h3>
+        <p>Import a CSV from your spreadsheet or phone book, add someone by hand, or just tell the assistant about them.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3>Tell KIT what happened</h3>
+        <p>Type it like a message. KIT logs the conversation, saves any notes and sets the next follow-up.</p>
+        <span class="quote">“Met Priya at the networking breakfast. Chase her about the brand project in two weeks.”</span>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h3>Get back in touch on time</h3>
+        <p>Your dashboard shows who's coming up, and KIT emails you when a follow-up is due. Nobody slips through.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-ink" id="who">
+  <div class="container section">
+    <h2>Built for people whose work runs on relationships</h2>
+    <p class="intro">If your next piece of work depends on who you know, you need a better system than memory and a spreadsheet.</p>
+    <div class="whos">
+      <div class="who">
+        <span class="tag">Freelance and fractional</span>
+        <h3>Juggling clients, leads and referrers?</h3>
+        <p>Portfolio workers live on follow-ups. KIT keeps every client, prospect and introducer in one place and tells you who to chase this week.</p>
+        <ul class="ticks">
+          <li>Warm leads stay warm</li>
+          <li>Every conversation on record</li>
+          <li>Done in seconds between meetings</li>
+        </ul>
+      </div>
+      <div class="who">
+        <span class="tag">In a full-time role</span>
+        <h3>Your contacts, not your employer's</h3>
+        <p>Your company's CRM stays with the company when you leave. KIT is your own black book, for the people you want to stay in touch with wherever you work.</p>
+        <ul class="ticks">
+          <li>Separate from work systems</li>
+          <li>Goes with you between jobs</li>
+          <li>Business and personal side by side</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-g">
+  <div class="container section">
+    <h2>One place for everyone who matters</h2>
+    <p class="intro">Clients and colleagues sit alongside your family, your friends and the people who keep your life running.</p>
+    <div class="people" aria-label="Examples of people you might keep in KIT">
+      <span class="person">Graham <span>· Head of Research</span></span>
+      <span class="person">Priya <span>· Prospect</span></span>
+      <span class="person">Danile <span>· Financial adviser</span></span>
+      <span class="person">Elizabeth <span>· Sister</span></span>
+      <span class="person">Gordon <span>· Introducer</span></span>
+      <span class="person">Frances <span>· Window cleaner</span></span>
+      <span class="person">Annie <span>· Old colleague</span></span>
+      <span class="person">Mike <span>· Gardener</span></span>
+    </div>
+    <div class="feats">
+      <div class="feat">
+        <div class="ficon"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3" fill="none" stroke="#1C2630" stroke-width="2"/><path d="M3 10h18M8 3v4M16 3v4" stroke="#1C2630" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3>Follow-ups at the centre</h3>
+        <p>Every contact can have a next date. Your dashboard lists who's coming up so you always know where to start.</p>
+      </div>
+      <div class="feat">
+        <div class="ficon"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="#1C2630" stroke-width="2" stroke-linejoin="round"/></svg></div>
+        <h3>A built-in assistant</h3>
+        <p>Log activity, add contacts and set follow-ups by typing what you want in plain English.</p>
+      </div>
+      <div class="feat">
+        <div class="ficon"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="#1C2630" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="#1C2630" stroke-width="2" stroke-linejoin="round"/></svg></div>
+        <h3>Email reminders</h3>
+        <p>When someone's due, KIT drops it into your inbox, so you don't have to remember to check.</p>
+      </div>
+      <div class="feat">
+        <div class="ficon"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7v5l3 2" fill="none" stroke="#1C2630" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="9" fill="none" stroke="#1C2630" stroke-width="2"/></svg></div>
+        <h3>The full history</h3>
+        <p>Every call, coffee and email you log is kept on their record, ready before you next speak.</p>
+      </div>
+      <div class="feat">
+        <div class="ficon"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6z" fill="none" stroke="#1C2630" stroke-width="2" stroke-linejoin="round"/><path d="M9 12h7M9 16h5" stroke="#1C2630" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3>Notes that stick</h3>
+        <p>Kids' names, what they're working on, what you promised. It's there when you need it.</p>
+      </div>
+      <div class="feat">
+        <div class="ficon"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14" fill="none" stroke="#1C2630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>CSV import</h3>
+        <p>Move your spreadsheet or phone book export across in one go. No starting from scratch.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-y" id="pricing">
+  <div class="container section pricing">
+    <div>
+      <h2>One simple price</h2>
+      <p class="intro dark">Everything KIT does, including the assistant. Cancel any time.</p>
+      <ul class="ticks incl">
+        <li>Unlimited contacts and follow-ups</li>
+        <li>Built-in assistant</li>
+        <li>Email reminders</li>
+        <li>CSV import</li>
+      </ul>
+    </div>
+    <div>
+      <div class="plans">
+        <div class="plan">
+          <p class="plan-name">Monthly</p>
+          <div class="price">£9<small> /month</small></div>
+          <p>Pay as you go.</p>
+        </div>
+        <div class="plan plan-best">
+          <p class="plan-name">Yearly · one month free</p>
+          <div class="price">£99<small> /year</small></div>
+          <p>Works out at £8.25 a month.</p>
+        </div>
+      </div>
+      <div class="price-signup" id="join">
+        <h3>Get early access</h3>
+        <p>Be first in when paid accounts open. UK only for now.</p>
+        <form class="signup js-signup" novalidate>
+          <label class="visually-hidden" for="email-pricing">Email address</label>
+          <input class="field" id="email-pricing" name="email" type="email" placeholder="Your email address" autocomplete="email" required>
+          <button class="btn btn-dark" type="submit">Get early access</button>
+          <p class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-g">
+  <div class="container section">
+    <h2>Questions</h2>
+    <div class="faqs">
+      <div class="faq">
+        <h3>Can I bring my existing contacts?</h3>
+        <p>Yes. Import a CSV from your spreadsheet or phone book, or add people one at a time.</p>
+      </div>
+      <div class="faq">
+        <h3>Is it only for business contacts?</h3>
+        <p>No. Most people keep work and personal contacts side by side, from clients to family to the plumber.</p>
+      </div>
+      <div class="faq">
+        <h3>Does it connect to Outlook, LinkedIn or my phone?</h3>
+        <p>Not yet. Integrations are on the roadmap. For now, the assistant and CSV import do the heavy lifting.</p>
+      </div>
+      <div class="faq">
+        <h3>Who can sign up?</h3>
+        <p>Early access is open now. Paid accounts open to UK customers first.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-y" id="contact">
+  <div class="container section contact">
+    <div>
+      <h2>Get in touch</h2>
+      <p class="intro dark">Questions about KIT, running a community or partnering with us? Send a message and we'll get back to you.</p>
+    </div>
+    <div>
+      <form class="cform" id="contactForm" novalidate>
+        <input type="hidden" name="subject" value="New message from hi-kit.co.uk">
+        <input type="hidden" name="from_name" value="KIT website">
+        <input type="checkbox" name="botcheck" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="cfield-wrap">
+          <label for="c-name">Name</label>
+          <input class="cinput" id="c-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="cfield-wrap">
+          <label for="c-email">Email</label>
+          <input class="cinput" id="c-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="cfield-wrap full">
+          <label for="c-msg">Message</label>
+          <textarea class="cinput" id="c-msg" name="message" required></textarea>
+        </div>
+        <div class="full cform-actions">
+          <button class="btn btn-dark" type="submit">Send message</button>
+          <p class="form-message" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </div>
+  <site-footer></site-footer>
+</section>
+
+
+
+</body>
+</html>
